@@ -1,0 +1,258 @@
+.skip{
+  position: absolute;
+  top: -100px;
+}
+
+.skip:focus {
+  position: absolute;
+  top: 20px;
+  background: white;
+  color: black;
+}
+
+nav ul li a {
+  font-size: large;
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  font-family: Arial, Verdana;
+  color: #FFFFFF;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  background: #0073e6;
+}
+
+nav{
+  margin: 10px;
+  text-justify: center;
+}
+
+nav ul li {
+  padding: 7px;
+  background-color: navy;
+  text-align: center;
+  margin: auto;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+  align-items: center;
+}
+
+.gallery img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border: 3px solid white;
+}
+
+.active {
+  font-weight: bold; 
+  color: white;
+  text-decoration: underline;
+}
+
+title {
+  color: yellow;
+  font-size: large;
+  text-decoration: underline;
+  font-weight: 900%;
+  text-align: center;
+  padding: 10px;
+}
+
+h1 {
+  color: yellow;
+  font-size: large;
+  text-decoration: underline;
+  font-weight: 500%;
+  text-align: center;
+  padding: 10px;
+}
+
+h2 {
+  color: yellow;
+  font-size: large;
+  text-decoration: underline;
+  font-weight: 500%;
+  text-align: center;
+  padding: 10px;
+}
+
+h3 {
+  font-size: large;
+  text-decoration: underline;
+}
+
+
+.future p {
+  color: pink;
+  font-size: smaller;
+  font-weight: 100%;
+  padding: 5px;
+  border: 2px solid paleturquoise;
+  margin:auto;
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+.future {
+  grid-column : 1/-1;
+  text-align: center;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+p {
+  color: white;
+  font-size: smaller;
+  font-weight: 200%;
+  text-align: center;
+  padding: 10px;
+}
+
+.item1{ 
+  grid-column: 1/-1;
+}
+
+.item2{
+  grid-column: 1/-1;
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto;
+  } 
+}
+  @media screen and (min-width: 768px) {
+    body {
+      background-color: darkslategrey;
+    }
+    /* need to adjust font color for tablet */
+
+    nav ul li {
+      display:inline;
+      font-size: xx-large;
+      border: 5px solid white;
+      }
+    }
+
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+
+  .test {
+    flex-wrap: wrap;
+  }
+
+  title, h1, h2, h3, p, .future p {
+    color: white;
+    font-size: x-large;
+  }
+
+  p, .future p {
+    color: white;
+    font-size: x-large;
+  }
+
+  .future {
+    background: darkgreen;
+    padding: 5px;
+    border: 10px solid white;
+    }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .item1{
+    grid-column: 1 / 2;
+    text-align: center;
+  } 
+  
+  .item2{
+    grid-column: 2 / 3;
+    text-align: center;
+  }
+  
+  footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  audio::-webkit-media-controls-play-button {
+    background-color: lightblue;
+  }
+  footer p{
+    color:white;
+  }
+
+@media screen and (min-width: 1024px) {
+  body {
+    background: black;
+  }
+
+  nav ul li {
+    border: 7px solid white;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+  }
+  .gallery img {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+  }
+
+  .item1{ 
+    grid-area: auto / 1 / span 2 / span 2;
+  }
+  
+  .item2{
+    grid-area: auto / 3 / span 2 / span 2;
+  }
+  
+  h3 {
+    font-weight: 600;
+    color: white;
+  }
+  
+  .future {
+    transition: all 0.5s ease;
+    background: darkblue;
+    padding: 5px;
+    border: 10px solid white;
+    }
+
+    p, .future p {
+      color: white;
+      font-size: x-large;
+    }
+
+    .future:hover {
+      background: darkgreen;
+      padding: 10px;
+  }
+}
